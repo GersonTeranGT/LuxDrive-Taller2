@@ -170,7 +170,7 @@ main p {
     padding: 20px;
 }
 
-#resumen {
+.resumen {
     font-size: 40px;
     text-align: center;
     color: #FFB22C;

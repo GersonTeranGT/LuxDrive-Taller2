@@ -676,8 +676,96 @@
         </div>
     </section>
 
+    <div class="resumen">
+        <h1>Tabla de compras</h1>
+    </div>
+    <section id="seccion_formulario">
+        <div class="container_formulario">
+            <form action="" id="formulario">
+            <label for="nombre" class="labels">Nombre</label>
+            <br>
+            <input type="text" id="nombre" placeholder="Tu nombre" required size="10">
+            <br>
+            <label for="apellido" class="labels">Apellido</label>
+            <br>
+            <input type="text" id="apellido" placeholder="Tu apellido" required size="10">
+            <br>
+            <label for="cedula" class="labels">Cédula</label>
+            <br>
+            <input type="text" id="cedula" pattern="[0-9]{10}" maxlength="10" placeholder="Ej: 1754788765" size="10">
+            <br>
+            <label for="telefono" class="labels">Teléfono</label>
+            <br>
+            <input type="tel" id="telefono" pattern="[0-9]{10}" maxlength="10" placeholder="Ej: 0909182765" required
+                size="10">
+            <br>
+            <label for="email" class="labels">Email</label>
+            <br>
+            <input type="email" id="email" placeholder="nombre@gmail.com" required>
+            <br>
+            <label for="direccion" class="labels">Dirección</label>
+            <br>
+            <input type="text" id="direccion" placeholder="Ej: Quito" required size="10">
+            <br>
+            <label for="auto" class="labels">Auto</label>
+            <br>
+            <select name="" id="auto">
+                <option value="SELECCIONE">SELECCIONE</option>
+                <option value="Lamborghini Urus">Lamborghini Urus</option>
+                <option value="NISSAN GTR-R35">NISSAN GTR-R35</option>
+                <option value="FORD Mustang Shelby GT500">FORD Mustang Shelby GT500</option>
+                <option value="Corvette C7">Corvette C7</option>
+                <option value="Ferrari F8 Tributo">Ferrari F8 Tributo</option>
+                <option value="Mercedes-Benz 300 SL">Mercedes-Benz 300 SL</option>
+                <option value="Jaguar E-Type">Jaguar E-Type</option>
+                <option value="McLaren F1 LM">McLaren F1 LM</option>
+                <option value="BMW M4 Coupe">BMW M4 Coupe</option>
+                <option value="McLaren Artura Spider">McLaren Artura Spider</option>
+                <option value="Aston Martin DBS Superleggera">Aston Martin DBS Superleggera</option>
+                <option value="NISSAN Skyline GTR-R34">NISSAN Skyline GTR-R34</option>
+            </select>
+            <br>
+            <label for="pago" class="labels">Forma de pago</label>
+            <br>
+            <label for="efectivo">
+                <input type="radio" value="Efectivo" id="efectivo" name="pago">
+                Efectivo
+            </label>
+            <label for="tarjeta">
+                <input type="radio" value="Tarjeta" id="tarjeta" name="pago">
+                Tarjeta
+            </label>
+            <br>
+            <button id="boton_enviar">Agregar</button>
+        </form>
+        </div>
+        
+    </section>
+    <section id="seccion_tabla">
+        <div class="container_table">
+            
+            <table border="5" id="tabla">
+            <thead id="fila_cabecera">
+                <tr id="cabecera">
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Cédula</th>
+                    <th>Teléfono</th>
+                    <th>Email</th>
+                    <th>Dirección</th>
+                    <th>Auto</th>
+                    <th>Forma de pago</th>
+                </tr>
+            </thead>
+            <tbody>
 
-    <div id="resumen">
+            </tbody>
+        </table>
+        </div>
+        
+    </section>
+
+    <div class="resumen">
         <h1>Tabla completa de nuestros autos</h1>
     </div>
 
@@ -887,94 +975,7 @@
         </div>
     </section>
 
-    <div id="resumen">
-        <h1>Tabla de compras</h1>
-    </div>
-    <section id="seccion_formulario">
-        <div class="container_formulario">
-            <form action="" id="formulario">
-            <label for="nombre" class="labels">Nombre</label>
-            <br>
-            <input type="text" id="nombre" placeholder="Tu nombre" required size="10">
-            <br>
-            <label for="apellido" class="labels">Apellido</label>
-            <br>
-            <input type="text" id="apellido" placeholder="Tu apellido" required size="10">
-            <br>
-            <label for="cedula" class="labels">Cédula</label>
-            <br>
-            <input type="text" id="cedula" pattern="[0-9]{10}" maxlength="10" placeholder="Ej: 1754788765" size="10">
-            <br>
-            <label for="telefono" class="labels">Teléfono</label>
-            <br>
-            <input type="tel" id="telefono" pattern="[0-9]{10}" maxlength="10" placeholder="Ej: 0909182765" required
-                size="10">
-            <br>
-            <label for="email" class="labels">Email</label>
-            <br>
-            <input type="email" id="email" placeholder="nombre@gmail.com" required>
-            <br>
-            <label for="direccion" class="labels">Dirección</label>
-            <br>
-            <input type="text" id="direccion" placeholder="Ej: Quito" required size="10">
-            <br>
-            <label for="auto" class="labels">Auto</label>
-            <br>
-            <select name="" id="auto">
-                <option value="SELECCIONE">SELECCIONE</option>
-                <option value="Lamborghini Urus">Lamborghini Urus</option>
-                <option value="NISSAN GTR-R35">NISSAN GTR-R35</option>
-                <option value="FORD Mustang Shelby GT500">FORD Mustang Shelby GT500</option>
-                <option value="Corvette C7">Corvette C7</option>
-                <option value="Ferrari F8 Tributo">Ferrari F8 Tributo</option>
-                <option value="Mercedes-Benz 300 SL">Mercedes-Benz 300 SL</option>
-                <option value="Jaguar E-Type">Jaguar E-Type</option>
-                <option value="McLaren F1 LM">McLaren F1 LM</option>
-                <option value="BMW M4 Coupe">BMW M4 Coupe</option>
-                <option value="McLaren Artura Spider">McLaren Artura Spider</option>
-                <option value="Aston Martin DBS Superleggera">Aston Martin DBS Superleggera</option>
-                <option value="NISSAN Skyline GTR-R34">NISSAN Skyline GTR-R34</option>
-            </select>
-            <br>
-            <label for="pago" class="labels">Forma de pago</label>
-            <br>
-            <label for="efectivo">
-                <input type="radio" value="Efectivo" id="efectivo" name="pago">
-                Efectivo
-            </label>
-            <label for="tarjeta">
-                <input type="radio" value="Tarjeta" id="tarjeta" name="pago">
-                Tarjeta
-            </label>
-            <br>
-            <button id="boton_enviar">Agregar</button>
-        </form>
-        </div>
-        
-    </section>
-    <section id="seccion_tabla">
-        <div class="container_table">
-            
-            <table border="5" id="tabla">
-            <thead id="fila_cabecera">
-                <tr id="cabecera">
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Cédula</th>
-                    <th>Teléfono</th>
-                    <th>Email</th>
-                    <th>Dirección</th>
-                    <th>Auto</th>
-                    <th>Forma de pago</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
-        </div>
-        
-    </section>
+    
 
     <!--footer-->
     <footer class="bg-white rounded-lg shadow-sm dark:bg-gray-900 m-4">
