@@ -1,6 +1,16 @@
 //tabla
 let botonEnviar = document.querySelector('#boton_enviar');
 
+botonEnviar.onmouseenter = () => {
+    botonEnviar.style.backgroundColor = "orange";
+    botonEnviar.style.color = "white";
+};
+
+botonEnviar.onmouseleave = () => {
+    botonEnviar.style.backgroundColor = "white";
+    botonEnviar.style.color = "black";
+};
+
 botonEnviar.onclick = function (event) {
     event.preventDefault();
 
