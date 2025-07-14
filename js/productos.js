@@ -44,4 +44,11 @@ botonEnviar.onclick = function (event) {
     alert("Datos agregados a la tabla");
     document.querySelector("table tbody").appendChild(nuevaFila);
     document.getElementById("formulario").reset();//limpiar el formulario
+    botonEnviar.style.backgroundColor = "orange";
 };
+
+const boton = document.getElementById('boton_agregar');
+
+boton.addEventListener('click', function () {
+    boton.style.backgroundColor = 'blue';
+});
